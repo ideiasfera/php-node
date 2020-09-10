@@ -1,0 +1,28 @@
+# Retorna todos as pessoas
+GET http://localhost:3000/persons/
+Content-Type: application/json
+###
+
+# Retorna detalhes de uma pessoa
+GET http://localhost:3000/persons/2
+Content-Type: application/json
+###
+
+# Altera uma pessoa
+PATCH http://localhost:3000/persons/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2lhbm9AZ21haWwuY29tIiwiaWF0IjoxNTk1MTAwMzkwLCJleHAiOjE1OTUxMDM5OTB9.9-wb_FgeE-fy6sk3vhwoluYY2LK5wfqHq4Yniv4f76M
+
+{
+    "name" : "Bruno",
+    "position" : "Desenvolvedor",
+    "npr" : "887.858.232-87",
+    "photo" : "20200908211207838bruno.jpg"
+}
+###
+
+# Remove uma pessoa
+DELETE http://localhost:3000/persons/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2lhbm9AZ21haWwuY29tIiwiaWF0IjoxNTk1MTAwMzkwLCJleHAiOjE1OTUxMDM5OTB9.9-wb_FgeE-fy6sk3vhwoluYY2LK5wfqHq4Yniv4f76M
+###
